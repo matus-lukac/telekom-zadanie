@@ -1,0 +1,47 @@
+header {
+  height: 80px;
+  background: $white;
+  border-bottom: 1px solid $darkgray;
+  padding: 12px 0;
+
+  .headerwrapper {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+    .logo {
+      img {
+        height: 40px;
+      }
+    }
+
+    .magentatext {
+      color: $magenta;
+      font-weight: 700;
+      line-height: 18px;
+      margin-left: 20px;
+    }
+
+    .heavytext {
+      color: $black;
+      font-size: 26px;
+      font-weight: 900;
+      margin-left: 50px;
+    }
+
+    .alert {
+      margin-left: auto;
+      max-height: 40px;
+    }
+
+    .avatar {
+      margin-left: 30px;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+    }
+  }
+}

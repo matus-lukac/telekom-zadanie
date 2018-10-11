@@ -1,0 +1,110 @@
+.contentcolumn {
+  padding-left: 60px;
+  max-width: 1300px;
+  width: 100%;
+
+  h1 {
+    font-size: 32px;
+    font-weight: 500;
+    color: $black;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+}
+
+table {
+  width: 100%;
+  font-size: 14px;
+  border-spacing: 0;
+  th,
+  td {
+    padding: 20px;
+  }
+
+  thead {
+    background: $lightgray;
+    text-align: left;
+    border: 1px solid $darkgray;
+    font-size: 22px;
+    text-transform: uppercase;
+
+    th {
+      font-weight: 400 !important;
+      border: 1px solid $darkgray;
+    }
+  }
+
+  tbody {
+    tr {
+      background: $white;
+    }
+
+    td {
+      font-weight: 400;
+      border-bottom: 1px solid $darkgray;
+
+      span {
+        display: block;
+
+        strong {
+          font-weight: 700;
+        }
+
+        &.user {
+          padding-top: 20px;
+        }
+      }
+
+      .progres {
+        position: relative;
+        padding: 10px 0;
+
+        .progresmagenta,
+        .progresgray {
+          position: absolute;
+          display: block;
+          height: 3px;
+          border-radius: 2px;
+        }
+
+        .progresmagenta {
+          background: $magenta;
+          z-index: 2;
+        }
+        .progresgray {
+          background: $bodygray;
+          z-index: 1;
+        }
+      }
+
+      a {
+        color: $blue;
+        text-transform: uppercase;
+        float: right;
+      }
+    }
+  }
+}
+
+.qr {
+  margin-top: 26.56px;
+  padding: 60px 0;
+  background: $lightgray;
+  border: 1px solid $darkgray;
+
+  h1 {
+    text-transform: none;
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+.imgcontent {
+  padding-bottom: 30px;
+  img {
+    max-width: 1100px;
+    width: 100%;
+  }
+}

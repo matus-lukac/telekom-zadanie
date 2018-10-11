@@ -1,0 +1,20 @@
+javascript:
+  sources:
+    - ./src/js/app.js
+  output:
+    path: ./build/assets/dev/
+    name: main.min.js
+style:
+  sources:
+    - ./src/styles/style.scss
+  output:
+    path: ./build/assets/dev/
+    name: style.min.css
+browser_sync:
+  open: external
+  host: telekom-zadanie.l
+  proxy: telekom-zadanie.l
+  browser: google chrome
+  baseDir: ./
+  files:
+    - ./build/**/*

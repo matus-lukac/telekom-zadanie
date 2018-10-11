@@ -1,0 +1,21 @@
+.animation {
+  padding: 180px 0;
+
+  i {
+    font-size: 50px;
+    color: darken($darkgray, 20%);
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

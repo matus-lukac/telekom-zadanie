@@ -1,0 +1,5 @@
+node_modules
+assets
+.env
+themes/demo
+yarn-error.log
