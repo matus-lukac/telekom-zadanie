@@ -2,17 +2,14 @@
 
 import $ from 'jquery';
 
-$(function() {
-  setTimeout(function() {
-    $('.animation').addClass('hidden');
-    $('.qr').removeClass('hidden');
-  }, 5500);
+$('#row1').click(function() {
+  $('#row2').removeClass('hidden');
 });
 
-$('#services').click(function(e) {
-  e.preventDefault();
-  $('.animation').addClass('hidden');
-  $('.qr').addClass('hidden');
-  $('.data-table').removeClass('hidden');
-  $('.imgcontent').removeClass('hidden');
+$('#row2').click(function() {
+  $('#row3').removeClass('hidden');
+});
+
+$('#row3').click(function() {
+  $('#row4').removeClass('hidden');
 });

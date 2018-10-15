@@ -3,10 +3,9 @@
 <header>
   <div class="headerwrapper">
     <a href="" class="logo"><img src="/assets/imgs/static/logo.png"></a>
-    <span class="magentatext">FMCC<br>TELEKOM</span>
-    <span class="heavytext">Digi Service GmbH</span>
+    <span class="magentatext"></span>
+    <span class="heavytext">Service Desk</span>
     <img src="/assets/imgs/static/alert.png" class="alert">
-    <img src="/assets/imgs/static/avatar.jpg" class="avatar">
   </div>
 </header>
 

@@ -1,5 +1,5 @@
 .contentcolumn {
-  padding-left: 60px;
+  padding: 35px 0 0 60px;
   max-width: 1300px;
   width: 100%;
 
@@ -12,99 +12,80 @@
   }
 }
 
-table {
+.filter {
   width: 100%;
-  font-size: 14px;
-  border-spacing: 0;
-  th,
-  td {
-    padding: 20px;
-  }
+  height: 40px;
+  background: $magenta;
+  margin-bottom: 20px;
 
-  thead {
-    background: $lightgray;
-    text-align: left;
-    border: 1px solid $darkgray;
-    font-size: 22px;
-    text-transform: uppercase;
+  .filterrow {
+    display: flex;
+    align-items: center;
+    line-height: 40px;
 
-    th {
-      font-weight: 400 !important;
-      border: 1px solid $darkgray;
+    .filtercolumn {
+      flex: 1 0 20%;
+      color: $white;
+      font-size: 16px;
+      text-align: center;
     }
   }
+}
 
-  tbody {
-    tr {
-      background: $white;
-    }
+.table-row {
+  max-width: 1240px;
+  width: 100%;
+  display: flex;
+  border: 2px solid $darkgray;
+  border-radius: 2px;
+  padding: 10px 0;
+  opacity: 1;
+  margin: 10px 0;
+  @extend .transition;
 
-    td {
-      font-weight: 400;
-      border-bottom: 1px solid $darkgray;
+  &:hover {
+    border-color: $magenta;
+    background: rgba($white, 0.5);
+  }
+
+  .column {
+    flex: 1 0 20%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .rownumber {
+      text-align: center;
 
       span {
         display: block;
-
-        strong {
-          font-weight: 700;
-        }
-
-        &.user {
-          padding-top: 20px;
-        }
-      }
-
-      .progres {
-        position: relative;
-        padding: 10px 0;
-
-        .progresmagenta,
-        .progresgray {
-          position: absolute;
-          display: block;
-          height: 3px;
-          border-radius: 2px;
-        }
-
-        .progresmagenta {
-          background: $magenta;
-          z-index: 2;
-        }
-        .progresgray {
-          background: $bodygray;
-          z-index: 1;
-        }
-      }
-
-      a {
-        color: $blue;
-        text-transform: uppercase;
-        float: right;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        background: $darkgray;
+        border-radius: 50%;
       }
     }
-  }
-}
 
-.qr {
-  margin-top: 26.56px;
-  padding: 60px 0;
-  background: $lightgray;
-  border: 1px solid $darkgray;
+    .inforow {
+      width: 100%;
+    }
 
-  h1 {
-    text-transform: none;
-    margin-bottom: 20px;
+    strong {
+      font-size: 13px;
+    }
   }
-  p {
-    margin-bottom: 20px;
-  }
-}
 
-.imgcontent {
-  padding-bottom: 30px;
-  img {
-    max-width: 1100px;
-    width: 100%;
+  .column:nth-child(1),
+  .column:nth-child(2),
+  .column:nth-child(3),
+  .column:nth-child(4) {
+    border-right: 1px solid $darkgray;
+  }
+
+  .column:nth-child(1) {
+    align-items: center;
   }
 }
