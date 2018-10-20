@@ -2,14 +2,121 @@
 
 import $ from 'jquery';
 
-$('#row1').click(function() {
+// zobraz riadok #2 + zmen stav
+
+$('#rownumber1').click(function() {
   $('#row2').removeClass('hidden');
+  $('#row2').addClass('showing');
+  if ($('#row2').hasClass('showing')) {
+    setTimeout(function() {
+      $('.row2text').html('<i class="fas fa-wrench"></i> In Progress');
+    }, 3000);
+
+    setTimeout(function() {
+      $('#actionrow2').removeClass('hidden');
+    }, 3500);
+
+    setTimeout(function() {
+      $('.row2text').html('<i class="fas fa-clipboard-check"></i> Resolved');
+      $('#statusicon2').removeClass('animated');
+    }, 10000);
+  }
 });
 
-$('#row2').click(function() {
+// zobraz riadok #3 + zmen stav
+
+$('#rownumber2').click(function() {
   $('#row3').removeClass('hidden');
+  $('#row3').addClass('showing');
+  if ($('#row3').hasClass('showing')) {
+    setTimeout(function() {
+      $('.row3text').html('<i class="fas fa-wrench"></i> In Progress');
+    }, 3000);
+
+    setTimeout(function() {
+      $('#actionrow3').removeClass('hidden');
+    }, 3500);
+  }
 });
 
-$('#row3').click(function() {
+// zobraz riadok #4 + zmen stav
+
+$('#rownumber3').click(function() {
   $('#row4').removeClass('hidden');
+  $('#row4').addClass('showing');
+  if ($('#row4').hasClass('showing')) {
+    setTimeout(function() {
+      $('.row4text').html('<i class="fas fa-wrench"></i> In Progress');
+    }, 3000);
+
+    setTimeout(function() {
+      $('#actionrow4').removeClass('hidden');
+    }, 3500);
+
+    setTimeout(function() {
+      $('.row4text').html('<i class="fas fa-clipboard-check"></i> Resolved');
+      $('#statusicon4').removeClass('animated');
+    }, 10000);
+  }
+});
+
+// riadok #1
+
+$.fn.statusRiadok1 = function() {
+  setTimeout(function() {
+    $('.row1text').html('<i class="fas fa-wrench"></i> In Progress');
+  }, 3000);
+
+  setTimeout(function() {
+    $('#actionrow1').removeClass('hidden');
+  }, 3500);
+
+  setTimeout(function() {
+    $('.row1text')
+      .html(
+        '<i class="fas fa-star"></i> Self Care<br><img class="youtubescreen" src="http://lab.matuslukac.com/zadanie2/assets/imgs/video-screen.png" alt="">'
+      )
+      .click(function() {
+        $('.row1text').html(
+          '<i class="fas fa-clipboard-check"></i> Resolved manually'
+        );
+        $('#statusicon1').removeClass('animated');
+      });
+  }, 5000);
+};
+
+$('#row1').statusRiadok1();
+
+// action link
+
+$('#buttonrow1').on('click', function(e) {
+  e.preventDefault();
+  var valuerow1 = $('#inputrow1').val();
+
+  $('#newlinkrow1').prop('href', valuerow1);
+  $('#newlinkrow1').removeClass('hidden');
+});
+
+$('#buttonrow2').on('click', function(e) {
+  e.preventDefault();
+  var valuerow2 = $('#inputrow2').val();
+
+  $('#newlinkrow2').prop('href', valuerow2);
+  $('#newlinkrow2').removeClass('hidden');
+});
+
+$('#buttonrow3').on('click', function(e) {
+  e.preventDefault();
+  var valuerow3 = $('#inputrow3').val();
+
+  $('#newlinkrow3').prop('href', valuerow3);
+  $('#newlinkrow3').removeClass('hidden');
+});
+
+$('#buttonrow4').on('click', function(e) {
+  e.preventDefault();
+  var valuerow4 = $('#inputrow4').val();
+
+  $('#newlinkrow4').prop('href', valuerow4);
+  $('#newlinkrow4').removeClass('hidden');
 });

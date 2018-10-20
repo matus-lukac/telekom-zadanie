@@ -21,13 +21,26 @@
   .filterrow {
     display: flex;
     align-items: center;
-    line-height: 40px;
+    line-height: 24px;
+    padding: 8px 0;
 
     .filtercolumn {
-      flex: 1 0 20%;
+      flex: 1 0 200px;
       color: $white;
       font-size: 16px;
       text-align: center;
+
+      &.number {
+        flex: 0 0 150px;
+      }
+    }
+
+    .filtercolumn:nth-child(1),
+    .filtercolumn:nth-child(2),
+    .filtercolumn:nth-child(3),
+    .filtercolumn:nth-child(4),
+    .filtercolumn:nth-child(5) {
+      border-right: 1px solid $white;
     }
   }
 }
@@ -49,11 +62,15 @@
   }
 
   .column {
-    flex: 1 0 20%;
+    flex: 1 0 200px;
     padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    &.number {
+      flex: 0 0 150px;
+    }
 
     .rownumber {
       text-align: center;
@@ -64,28 +81,102 @@
         height: 40px;
         line-height: 40px;
         font-size: 16px;
-        background: $darkgray;
+        background: $magenta;
+        color: $white;
         border-radius: 50%;
+      }
+
+      &:hover {
+        cursor: pointer;
       }
     }
 
     .inforow {
       width: 100%;
+
+      .statustext {
+        i {
+          margin-right: 5px;
+        }
+
+        img {
+          cursor: pointer;
+        }
+      }
     }
 
     strong {
       font-size: 13px;
+
+      i {
+        color: $magenta;
+        margin-right: 5px;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+        &.animated {
+          animation-name: spin;
+        }
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
     }
   }
 
   .column:nth-child(1),
   .column:nth-child(2),
   .column:nth-child(3),
-  .column:nth-child(4) {
+  .column:nth-child(4),
+  .column:nth-child(5) {
     border-right: 1px solid $darkgray;
   }
 
   .column:nth-child(1) {
     align-items: center;
+  }
+}
+
+.action {
+  opacity: 1;
+  @extend .transition;
+}
+
+.fa-upload {
+  line-height: 55px;
+  margin-left: 10px;
+}
+
+.link-input {
+  clear: both;
+  font-size: 14px;
+  .placeholder {
+    line-height: 25px;
+  }
+  input {
+    height: 25px;
+    line-height: 25px;
+  }
+
+  .showlink {
+    display: block;
+    padding-top: 10px;
+    a {
+      color: $blue;
+      @extend .transition;
+
+      &:hover {
+        color: $magenta;
+        text-decoration: underline;
+      }
+    }
   }
 }

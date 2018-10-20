@@ -4,7 +4,7 @@
   <div class="headerwrapper">
     <a href="" class="logo"><img src="/assets/imgs/static/logo.png"></a>
     <span class="magentatext"></span>
-    <span class="heavytext">Service Desk</span>
+    <span class="heavytext">Customer Trouble Tickets</span>
     <img src="/assets/imgs/static/alert.png" class="alert">
   </div>
 </header>

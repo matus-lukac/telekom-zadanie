@@ -20,6 +20,12 @@
     </li>
     <li>
       <a href="">
+        <i class="fas fa-globe"></i>
+        <span>Outage Network</span>
+      </a>
+    </li>
+    <li>
+      <a href="">
         <i class="fas fa-cog"></i>
         <span>Settings</span>
       </a>
