@@ -95,6 +95,7 @@ $('#buttonrow1').on('click', function(e) {
 
   $('#newlinkrow1').prop('href', valuerow1);
   $('#newlinkrow1').removeClass('hidden');
+  $('#inputrow1').val('');
 });
 
 $('#buttonrow2').on('click', function(e) {
@@ -103,6 +104,7 @@ $('#buttonrow2').on('click', function(e) {
 
   $('#newlinkrow2').prop('href', valuerow2);
   $('#newlinkrow2').removeClass('hidden');
+  $('#inputrow2').val('');
 });
 
 $('#buttonrow3').on('click', function(e) {
@@ -111,6 +113,7 @@ $('#buttonrow3').on('click', function(e) {
 
   $('#newlinkrow3').prop('href', valuerow3);
   $('#newlinkrow3').removeClass('hidden');
+  $('#inputrow3').val('');
 });
 
 $('#buttonrow4').on('click', function(e) {
@@ -119,4 +122,5 @@ $('#buttonrow4').on('click', function(e) {
 
   $('#newlinkrow4').prop('href', valuerow4);
   $('#newlinkrow4').removeClass('hidden');
+  $('#inputrow4').val('');
 });
