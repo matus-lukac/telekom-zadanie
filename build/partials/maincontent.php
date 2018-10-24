@@ -9,7 +9,7 @@
    <div class="wrapper">
      <h1 class="error-headline">HTTP 503 Service unavailable error<br>FMCC Telekom is temporarily unavailable<br>Error code: FMCC1398</h1>
      <p>We are working hard to fix the problem. We will be up and running soon.<br>Thank you for your patience.</p>
-     <img src="/assets/imgs/qrcode.png" alt="" class="qrcode">
+     <img src="./assets/imgs/qrcode.png" alt="" class="qrcode">
    </div>
   </section>
 
@@ -108,6 +108,6 @@
   </section>
 
   <section class="imgcontent hidden">
-    <img src="/assets/imgs/static/content.jpg" alt="">
+    <img src="./assets/imgs/static/content.jpg" alt="">
   </section>
 </div>

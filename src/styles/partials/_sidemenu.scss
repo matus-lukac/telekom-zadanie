@@ -1,5 +1,5 @@
 aside {
-  max-width: 289px;
+  max-width: 230px;
   width: 100%;
   //height: 100%;
   background: $lightblack;
@@ -13,6 +13,7 @@ aside {
     border-bottom: 1px solid $dark-border;
     @extend .transition;
     a {
+      font-size: 14px;
       line-height: 70px;
       display: block;
       color: $white;
@@ -36,7 +37,7 @@ aside {
 }
 
 .feedbackbox {
-  width: 289px;
+  width: 230px;
   color: $white;
   padding: 15px;
   position: absolute;
