@@ -2,17 +2,22 @@
 
   <div class="filter">
     <div class="filterrow">
-      <div class="filtercolumn number">Request number</div>
+      <div class="filtercolumn number">Number</div>
       <div class="filtercolumn">Customer</div>
       <div class="filtercolumn">Product</div>
       <div class="filtercolumn">Error</div>
       <div class="filtercolumn">Status</div>
       <div class="filtercolumn">Action</div>
+      <div class="filtercolumn">Feedback</div>
     </div>
   </div>
   <div class="table-row hidden" id="row4">
     <div class="column number">
-      <div id="rownumber4" class="rownumber"><span>4</span></div>
+      <div id="rownumber4" class="rownumber">
+        <span>5</span>
+      </div>
+      <br><span class="created"><strong>Created:</strong><br>24.10.2018<span>
+      <br><span class="created"><strong>Estimated:</strong><br>25.10.2018<span>
     </div>
     <div class="column">
       <div class="inforow"><strong>Endpoint ID:</strong> 	<br>79:2A:FC:53:Z5:B4</div>
@@ -42,10 +47,18 @@
         </div>
       </div>
     </div>
+    <div class="column">
+      <div class="inforow"><strong>Feedback:</strong> 	<br>4/5</div>
+      <div class="inforow"><strong>Compensation:</strong> 	<br>No</div>
+    </div>
   </div>
   <div class="table-row hidden" id="row3">
     <div class="column number">
-      <div id="rownumber3" class="rownumber"><span>3</span></div>
+      <div id="rownumber3" class="rownumber">
+        <span>4</span>
+      </div>
+      <br><span class="created"><strong>Created:</strong><br>23.10.2018<span>
+      <br><span class="created"><strong>Estimated:</strong><br>24.10.2018<span>
     </div>
     <div class="column">
       <div class="inforow"><strong>Endpoint ID:</strong> 	<br>79:2A:FC:5C:Z5:B4</div>
@@ -75,10 +88,18 @@
         </div>
       </div>
     </div>
+    <div class="column">
+      <div class="inforow"><strong>Feedback:</strong> 	<br>5/5</div>
+      <div class="inforow"><strong>Compensation:</strong> 	<br>Yes</div>
+    </div>
   </div>
   <div id="row2" class="table-row hidden" >
     <div class="column number">
-      <div id="rownumber2" class="rownumber"><span>2</span></div>
+      <div id="rownumber2" class="rownumber">
+        <span>3</span>
+      </div>
+      <br><span class="created"><strong>Created:</strong><br>22.10.2018<span>
+      <br><span class="created"><strong>Estimated:</strong><br>23.10.2018<span>
     </div>
     <div class="column">
       <div class="inforow"><strong>Endpoint ID:</strong> 	<br>38:6B:BB:A3:5Z:FF</div>
@@ -108,10 +129,18 @@
         </div>
       </div>
     </div>
+    <div class="column">
+      <div class="inforow"><strong>Feedback:</strong> 	<br>5/5</div>
+      <div class="inforow"><strong>Compensation:</strong> 	<br>Yes</div>
+    </div>
   </div>
-  <div class="table-row" id="row1">
+  <div class="table-row hidden" id="row1">
     <div class="column number">
-      <div id="rownumber1" class="rownumber"><span>1</span></div>
+      <div id="rownumber1" class="rownumber">
+        <span>2</span>
+      </div>
+      <br><span class="created"><strong>Created:</strong><br>21.10.2018<span>
+      <br><span class="created"><strong>Estimated:</strong><br>22.10.2018<span>
     </div>
     <div class="column">
       <div class="inforow"><strong>Endpoint ID:</strong> 	<br>38:6B:BB:F8:47:7F</div>
@@ -141,5 +170,52 @@
         </div>
       </div>
     </div>
+    <div class="column">
+      <div class="inforow"><strong>Feedback:</strong> 	<br>5/5</div>
+      <div class="inforow"><strong>Compensation:</strong> 	<br>Yes</div>
+    </div>
   </div>
+
+  <div class="table-row" id="row0">
+    <div class="column number">
+      <div id="rownumber0" class="rownumber">
+        <span>1</span>
+      </div>
+      <br><span class="created"><strong>Created:</strong><br>21.10.2018<span>
+      <br><span class="created"><strong>Estimated:</strong><br>22.10.2018<span>
+    </div>
+    <div class="column">
+      <div class="inforow"><strong>Endpoint ID:</strong> 	<br>38:6B:BB:F8:47:7F</div>
+      <div class="inforow"><strong>Customer ID:</strong> 	<br>1189932501</div>
+      <div class="inforow"><strong>Customer name:</strong> 	<br>Ladislav Balogh</div>
+    </div>
+    <div class="column">
+      <div class="inforow"><strong>Product name:</strong> 	<br>Magio IP TV</div>
+      <div class="inforow"><strong>Serial number:</strong> 	<br>M91305EB688</div>
+    </div>
+    <div class="column">
+      <div class="inforow"><strong>Error code:</strong> 	<br>MG1999</div>
+      <div class="inforow"><strong>Error message:</strong> 	<br>Failed to load the source</div>
+    </div>
+    <div class="column">
+      <div class="inforow"><strong><i id="statusicon0" class="fas fa-spinner animated"></i>Status:</strong> 	<br><span class="statustext row0text"><i class="fas fa-folder-plus"></i>Created</span></div>
+    </div>
+    <div class="column">
+      <div class="inforow">
+        <div id="actionrow0" class="action hidden">
+          <a href="" id="buttonrow0" class="button">Self Service</a>
+          <i class="fas fa-upload"></i>
+          <div class="link-input">
+            <span class="placeholder">Link:</span> <input id="inputrow1" type="text" name="" id="linkinput">
+            <span class="showlink"><a href="" id="newlinkrow0" class="newlink hidden" target="_blank">Hyperlink</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="inforow"><strong>Feedback:</strong> 	<br>5/5</div>
+      <div class="inforow"><strong>Compensation:</strong> 	<br>Yes</div>
+    </div>
+  </div>
+
 </div>
