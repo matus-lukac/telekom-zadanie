@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>FMCC TELEKOM</title>
 
-  <link rel="stylesheet" type="text/css" media="screen" href="assets/dev/style.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/dev/style.min.css?0dsdsds" />
 </head>
 
 <body>

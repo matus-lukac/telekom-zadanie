@@ -86,7 +86,6 @@ table {
 }
 
 .qr {
-  margin-top: 26.56px;
   padding: 60px 0;
   background: $lightgray;
   border: 1px solid $darkgray;
@@ -94,6 +93,7 @@ table {
   h1 {
     text-transform: none;
     margin-bottom: 20px;
+    font-size: 22px;
   }
   p {
     margin-bottom: 20px;

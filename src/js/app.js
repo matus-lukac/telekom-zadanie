@@ -6,7 +6,7 @@ $(function() {
   setTimeout(function() {
     $('.animation').addClass('hidden');
     $('.qr').removeClass('hidden');
-  }, 5500);
+  }, 2500);
 });
 
 $('#services').click(function(e) {
