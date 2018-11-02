@@ -2,6 +2,8 @@
 
 import $ from 'jquery';
 
+import moment from 'moment';
+
 // zobraz riadok #2 + zmen stav
 
 $('#rownumber1').click(function() {
@@ -38,6 +40,7 @@ $('#rownumber2').click(function() {
     }, 3500);
 
     setTimeout(function() {
+      $('#statusicon3').addClass('hidden');
       $('.row3text')
         .html(
           '<i class="fas fa-star"></i> Self Care<br><img class="youtubescreen" src="./assets/imgs/icon_case_3.png" alt="">'
@@ -88,6 +91,7 @@ $('#rownumber0').click(function() {
     }, 3500);
 
     setTimeout(function() {
+      $('#statusicon1').addClass('hidden');
       $('.row1text')
         .html(
           '<i class="fas fa-star"></i> Self Care<br><img class="youtubescreen" src="./assets/imgs/icon_case_1a.png" alt="">'
@@ -120,6 +124,21 @@ $.fn.statusRiadok0 = function() {
 };
 
 $('#row0').statusRiadok0();
+
+const today = moment().format('DD.MM.YYYY');
+const tommorrow = moment()
+  .add(1, 'days')
+  .format('DD.MM.YYYY');
+
+$.fn.currentTime = function() {
+  $('.date').html(
+    '<strong>Created:</strong><br>' +
+      today +
+      '<br><strong>Estimated:</strong><br>' +
+      tommorrow
+  );
+};
+$('.contentcolumn').currentTime();
 
 // action link
 

@@ -16,8 +16,10 @@
       <div id="rownumber4" class="rownumber">
         <span>5</span>
       </div>
-      <br><span class="created"><strong>Created:</strong><br>24.10.2018<span>
-      <br><span class="created"><strong>Estimated:</strong><br>25.10.2018<span>
+      <span class="created date">
+        <strong>Created:</strong><br>21.10.2018
+        <br><strong>Estimated:</strong><br>22.10.2018
+      </span>
     </div>
     <div class="column">
       <div class="inforow"><strong>Endpoint ID:</strong> 	<br>79:2A:FC:53:Z5:B4</div>
@@ -57,8 +59,10 @@
       <div id="rownumber3" class="rownumber">
         <span>4</span>
       </div>
-      <br><span class="created"><strong>Created:</strong><br>23.10.2018<span>
-      <br><span class="created"><strong>Estimated:</strong><br>24.10.2018<span>
+      <span class="created date">
+        <strong>Created:</strong><br>21.10.2018
+        <br><strong>Estimated:</strong><br>22.10.2018
+      </span>
     </div>
     <div class="column">
       <div class="inforow"><strong>Endpoint ID:</strong> 	<br>79:2A:FC:5C:Z5:B4</div>
@@ -98,8 +102,10 @@
       <div id="rownumber2" class="rownumber">
         <span>3</span>
       </div>
-      <br><span class="created"><strong>Created:</strong><br>22.10.2018<span>
-      <br><span class="created"><strong>Estimated:</strong><br>23.10.2018<span>
+      <span class="created date">
+        <strong>Created:</strong><br>21.10.2018
+        <br><strong>Estimated:</strong><br>22.10.2018
+      </span>
     </div>
     <div class="column">
       <div class="inforow"><strong>Endpoint ID:</strong> 	<br>38:6B:BB:A3:5Z:FF</div>
@@ -139,8 +145,10 @@
       <div id="rownumber1" class="rownumber">
         <span>2</span>
       </div>
-      <br><span class="created"><strong>Created:</strong><br>21.10.2018<span>
-      <br><span class="created"><strong>Estimated:</strong><br>22.10.2018<span>
+      <span class="created date">
+        <strong>Created:</strong><br>21.10.2018
+        <br><strong>Estimated:</strong><br>22.10.2018
+      </span>
     </div>
     <div class="column">
       <div class="inforow"><strong>Endpoint ID:</strong> 	<br>38:6B:BB:F8:47:7F</div>
@@ -181,8 +189,10 @@
       <div id="rownumber0" class="rownumber">
         <span>1</span>
       </div>
-      <br><span class="created"><strong>Created:</strong><br>21.10.2018<span>
-      <br><span class="created"><strong>Estimated:</strong><br>22.10.2018<span>
+      <span class="created date">
+        <strong>Created:</strong><br>21.10.2018
+        <br><strong>Estimated:</strong><br>22.10.2018
+      </span>
     </div>
     <div class="column">
       <div class="inforow"><strong>Endpoint ID:</strong> 	<br>38:6B:BB:F8:47:7F</div>
