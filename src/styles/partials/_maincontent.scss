@@ -80,6 +80,7 @@
 
     &.number {
       flex: 1 0 65px;
+      padding: 0 15px;
       max-width: 100px;
 
       .created {
@@ -99,6 +100,7 @@
         background: $magenta;
         color: $white;
         border-radius: 50%;
+        margin: -5px 0 5px;
       }
 
       &:hover {
